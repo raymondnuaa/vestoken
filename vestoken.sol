@@ -500,7 +500,7 @@ contract TokenVesting is Ownable {
         return _vestedAmount(who);
     }
     
-    function releasableAmount(address who) private view returns (uint256) {
+    function releasableAmount(address who) public view returns (uint256) {
         return _releasableAmount(who);
     }
     
